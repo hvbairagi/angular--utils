@@ -9,9 +9,11 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { Child2Component } from './child2/child2.component';
 import { ExcelsheetComponent } from './excelsheet/excelsheet.component';
+import { FileUploadAndRetrieveComponent } from './file-upload-and-retrieve/file-upload-and-retrieve.component';
+import { FileUploadAndDownloadComponent } from './file-components/file-upload-and-download/file-upload-and-download.component';
 
 @NgModule({
-  declarations: [AppComponent, TemplateComponent, ChildComponent, ParentComponent, Child2Component, ExcelsheetComponent],
+  declarations: [AppComponent, TemplateComponent, ChildComponent, ParentComponent, Child2Component, ExcelsheetComponent, FileUploadAndRetrieveComponent, FileUploadAndDownloadComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
