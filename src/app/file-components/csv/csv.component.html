@@ -1,0 +1,14 @@
+<p>csv works!</p>
+<input type="file" #fileImportInput (change)="fileChangeListener($event)" />
+
+<table>
+  <tbody>
+    <tr *ngFor="let row of csvRecords">
+      <td>{{ row.name }}</td>
+      <td>{{ row.age }}</td>
+      <td>{{ row.phone }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="onCsvFileSubmit()">Submit</button>

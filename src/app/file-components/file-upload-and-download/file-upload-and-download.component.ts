@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FileSelectDirective, FileUploader } from 'ng2-file-upload';
-import { FileService } from './file.service';
+import { FileUploader, FileSelectDirective } from 'ng2-file-upload';
 import { saveAs } from 'file-saver';
+import { FileService } from 'src/app/file.service';
 
 @Component({
   selector: 'app-file-upload-and-download',
@@ -9,9 +9,13 @@ import { saveAs } from 'file-saver';
   styleUrls: ['./file-upload-and-download.component.css'],
 })
 export class FileUploadAndDownloadComponent implements OnInit {
-  ngOnInit(): void {}
+  URL = 'http://localhost:3000/api/employee/store';
 
-  uploader: FileUploader = new FileUploader({ url: uri });
+  ngOnInit(): void {
+    console.log(this.uploader);
+  }
+
+  uploader: FileUploader = new FileUploader({ url: this.URL });
 
   attachmentList: any = [];
 
