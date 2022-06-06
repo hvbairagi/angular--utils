@@ -7,6 +7,7 @@ import { AngularFileUploaderModule } from 'angular-file-uploader';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxCsvParserModule } from 'ngx-csv-parser';
+import { NgxVcardModule } from 'ngx-vcard';
 
 //Components
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +32,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CsvComponent } from './file-components/csv/csv.component';
+import { VcfComponent } from './file-components/vcf/vcf.component';
+import { Vcf2Component } from './file-components/vcf2/vcf2.component';
+import { AcademindFileUploadComponent } from './file-components/academind-file-upload/academind-file-upload.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,9 @@ import { CsvComponent } from './file-components/csv/csv.component';
     GalleryComponent,
     GalleryDetailsComponent,
     CsvComponent,
+    VcfComponent,
+    Vcf2Component,
+    AcademindFileUploadComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +72,7 @@ import { CsvComponent } from './file-components/csv/csv.component';
     MatFormFieldModule,
     MaterialFileInputModule,
     NgxCsvParserModule,
+    NgxVcardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

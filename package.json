@@ -27,6 +27,7 @@
     "ng2-file-upload": "^1.4.0",
     "ngx-csv-parser": "0.0.6",
     "ngx-material-file-input": "^2.1.1",
+    "ngx-vcard": "^3.0.17",
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.6.3",
     "tslib": "^2.0.0",
